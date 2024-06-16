@@ -1,0 +1,215 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+  color: white;
+  font-family: sans-serif;
+}
+input {
+  outline: none;
+  border: none;
+}
+.container {
+  margin: 50px auto;
+  border: 2px solid cornflowerblue;
+}
+
+h1 {
+  text-align: center;
+  color: cornflowerblue;
+  margin-bottom: 20px;
+}
+.stats {
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 2px solid cornflowerblue;
+  padding-bottom: 20px;
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.input-box label {
+  color: cornflowerblue;
+  font-weight: bold;
+  font-size: 18px;
+}
+.input-box input {
+  border-radius: 5px;
+  padding: 10px;
+}
+form button,
+.control button,
+.task-btn button {
+  background-color: cornflowerblue;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.control {
+  display: flex;
+  padding: 10px;
+}
+.control button {
+  background-color: #444;
+  border-radius: 0;
+}
+.active {
+  background-color: darkgreen;
+}
+ol {
+  padding: 10px;
+  line-height: 1.6;
+}
+ol li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #201f1f;
+  padding: 5px;
+  box-shadow: 0 5px 5px black;
+}
+ol li p {
+  word-wrap: break-word;
+  max-width: 300px;
+}
+h3 {
+  color: green;
+  text-transform: capitalize;
+}
+ol p {
+  color: white;
+}
+ol li .task-btn {
+  display: flex;
+  gap: 10px;
+}
+button:not(.control-btn):hover {
+  background-color: green;
+}
+.delete-btn:hover {
+  background-color: red !important;
+}
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  background-color: #201f1f;
+  padding: 8px;
+  box-shadow: 0 5px 5px black;
+  border-bottom: none;
+  margin-bottom: 12px;
+}
+.edit-form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+.edit-form div input {
+  padding: 8px;
+  border-radius: 5px;
+}
+.edit-form button {
+  align-self: center;
+  margin-top: 10px;
+}
+@media (max-width: 460px) {
+  .container {
+    width: 90%;
+    padding: 8px;
+  }
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  form .input-box {
+    width: 100%;
+  }
+  ol li h3 {
+    max-width: 120px;
+    word-wrap: break-word;
+  }
+  ol li p {
+    max-width: 120px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 461px) and (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  form .input-box {
+    width: 100%;
+  }
+  ol li h3 {
+    max-width: 180px;
+    word-wrap: break-word;
+  }
+  ol li p {
+    max-width: 180px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .container {
+    width: 90%;
+    padding: 10px;
+  }
+  form {
+    flex-direction: column;
+    gap: 20px;
+  }
+  form .input-box {
+    width: 100%;
+  }
+  ol li h3 {
+    max-width: 380px;
+    word-wrap: break-word;
+  }
+  ol li p {
+    max-width: 380px;
+    font-size: 16px;
+  }
+}
+@media (min-width: 1001px) {
+  .container {
+    width: 80%;
+    padding: 20px;
+  }
+  form {
+    gap: 20px;
+  }
+  form .input-box {
+    width: 100%;
+  }
+  ol li h3 {
+    max-width: 800px;
+    word-wrap: break-word;
+  }
+  ol li p {
+    max-width: 800px;
+    font-size: 16px;
+  }
+}
