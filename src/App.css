@@ -15,6 +15,7 @@ input {
 .container {
   margin: 50px auto;
   border: 2px solid cornflowerblue;
+  border-radius: 10px;
 }
 
 h1 {
